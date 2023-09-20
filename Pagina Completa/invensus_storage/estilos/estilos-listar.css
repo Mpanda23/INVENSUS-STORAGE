@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 4px;
+  }
+  
+  .links {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los enlaces */
+  }
+  
+  .social-links {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+.sm-icono {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sm-icono:hover {
+  opacity: 0.8;
+}
+
+nav {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(45deg, #21d4fd 0%, #8721ff 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: rgba(50,50,93,0,25) 8px 13px 27px -5px,
+  rgba(0,0,0,0.3) 0px 8px 16px -8px;
+  background-color: white;
+}
+
+.sub-form h1 {
+    font-size: 28px; 
+    color: #000000; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    text-align: center; 
+    margin-top: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  }
+
+h2 {
+  margin: 1.5rem 0 2rem 0;
+  text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    border: 1px solid #ddd;
+}
+  
+th, td {
+    border: 1px solid #000;
+    border-radius: 12px;
+    text-align: left;
+}
+  
+
+input:focus{
+  opacity: 0.7;
+}
+
+.upper-form {
+  width: 90%;
+}
+
+select{
+  background-color: #eaeeed;
+  width: 100%;
+  display: flex;
+  border-radius: 50px;
+  border-style: none;
+  padding: 12px 24px;
+}
+
+button {
+  padding: 12px 48px;
+  border-radius: 50px;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  background-color: #1a1b27;
+  font-weight: 600;
+  width: 90%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 30px;
+  margin-block-start: 5%;
+}
+.texto-final{
+  text-align: end;
+}
+
+.regreso {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+
+.anadir{
+  position: fixed;
+  top: 25%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+
+.anadir:hover {
+  opacity: 0.8;
+}
+
+.regreso:hover {
+  opacity: 0.8;
+}
+
+.texto-boton {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.sub-form {
+  position: relative; /* Hacemos que el contenedor sea relativo para que la sombra sea relativa a él */
+  padding: 20px; /* Añadimos espacio alrededor de la tabla */
+}
+
+
+.sub-form::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 12px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
+}
+
+.sub-form table tr th {
+  background-color:#69dbf5; 
+  border-radius: 0; 
+}
+

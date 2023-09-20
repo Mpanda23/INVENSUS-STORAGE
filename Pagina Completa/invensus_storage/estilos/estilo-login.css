@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  font-size: 1rem;
+}
+
+.links, .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 42px;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links, .nsg {
+  text-decoration: none;
+}
+
+.social-links {
+  padding: 0 2.5rem;
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+
+.social-links:hover {
+  opacity:0.8;
+  text-decoration: underline;
+}
+
+.sm-icono {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sm-icono:hover {
+  opacity: 0.8;
+}
+
+nav {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+nav {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(45deg, #21d4fd 0%, #8721ff 100%);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.sub-form {
+  margin-block-start: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 50vh;
+  border-radius: 12px;
+  box-shadow: rgba(50,50,93,0,25) 8px 13px 27px -5px,
+  rgba(0,0,0,0.3) 0px 8px 16px -8px;
+  background-color: white;
+}
+
+h2 {
+  margin: 1.5rem 0 2rem 0;
+  text-align: center;
+}
+
+label {
+  padding-left: 16px;
+  opacity: 0.75;
+}
+
+input{
+  display: flex;
+  border-radius: 50px;
+  border-style: none;
+  outline: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 12px 24px;
+  width: 90%;
+  background-color: #eaeeed;
+}
+
+input:focus{
+  opacity: 0.7;
+}
+
+button {
+  padding: 12px 48px;
+  border-radius: 50px;
+  color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  background-color: #1a1b27;
+  font-weight: 600;
+  width: 90%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 30px;
+  margin-block-start: 5%;
+}
+.texto-final{
+  text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Agregamos estilos al contenedor de la tabla */
+.sub-form {
+  position: relative; /* Hacemos que el contenedor sea relativo para que la sombra sea relativa a él */
+  padding: 20px; /* Añadimos espacio alrededor de la tabla */
+}
+
+/* Aplicamos el efecto de sombra alrededor del contenedor */
+.sub-form::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 12px; /* Borde redondeado */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombras alrededor del contenedor */
+  z-index: -1; /* Colocamos la sombra detrás del contenido */
+}
+/* Aplicamos un color de fondo suave a la fila de encabezados */
+/* Aplicamos un color de fondo suave a la fila de encabezados sin bordes redondeados */
+.sub-form table tr th {
+  background-color:#69dbf5; /* Color de fondo suave */ /* Cambiamos el color del texto */
+  border-radius: 0; /* Eliminamos el borde redondeado */
+}
+/* Estilo llamativo para el título "Lista de categorías" */
+.sub-form h1 {
+  font-size: 28px; 
+  color: #000000; 
+  text-transform: uppercase; 
+  font-weight: bold; 
+  text-align: center; 
+  margin-top: 20px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 4px;
+  }
+  
+  .links {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los enlaces */
+  }
+  
+  .social-links {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
